@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#mainImage {
+    width: 100%;
+}
+
+#menu{
+    height: 65px;
+}
+
+#menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+#menu ul li a{
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    display: flex;
+}
+
+#aboutMe {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#design{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#video{
+    width: 100%;
+    height: auto;
+    background-color: black; 
+}
+
+#prog{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#contacts{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.title{
+    font-size: 60px;
+    font-family: 'Poiret One', cursive;
+    color: #fff;
+}
