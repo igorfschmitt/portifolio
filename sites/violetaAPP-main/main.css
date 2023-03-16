@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FCFCFC;
+}
+
+.titulo {
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+    background-color: #232047;
+}
+
+.textoTitulo {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+svg:hover {
+    opacity: 0.7;
+}
+
+#fotosPortifolio {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#fotosPortifolio img {
+    margin: 0px 10px 40px 10px;
+}
+
+#fotosPortifolio a {
+    text-decoration: none;
+}
+
+.tituloPortifolio {
+    color: #fff;
+}
+
+#fotosServico a {
+    text-decoration: none;
+}
+
+#fotosServico {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#fotoSobre {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.descricaoGeral {
+    font-family: 'Nunito', sans-serif;
+}
+
+.tituloGeral {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.carousel img {
+    border-radius: 0px 0px 50px 50px;
+}
+
+.fundoBotao {
+
+    width: 60px;
+    height: 40px;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+.fundoBotao:hover {
+    background-color: #B24586;
+    opacity: 0.7;
+}
+
+.botaoMenu {
+    color: #f8f9fa;
+    border-radius: 10px;
+    width: 60px;
+}

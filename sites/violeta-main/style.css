@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; 
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo img {
+  max-width: 15%;
+  max-height: 15%;
+  margin-left: 10%;
+  display: flex;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(to right, #8B69B3, #8753c4);  /*degrade na cor do menu*/ 
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-image: linear-gradient(to right, #8B69B3, #8753c4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* SOBRE MIM */
+
+#sobre{   
+    background-color: #8B69B3;
+    color: #ffffff;
+    padding: 10%;
+}
+
+#sobre h1{
+    font-size: 1.5rem;
+}
+
+#sobre p{
+    font-size: 1.25rem;
+}
+
+/* CLIENTES */
+
+#clientes{
+    background-color: #eef1ec;
+    padding: 10%;
+}
+
+.item-depoimento{
+    display: inline-block;
+    width: 50%;
+}
+
+.item-depoimento img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;     /* arredonda a imagem */
+    box-shadow: 0 0 0 10px #8753c4;
+    
+}
+
+.item-depoimento p{
+    text-transform: capitalize;     /* primeira letra em maisculo */
+    font-style: italic;
+    padding: 10%;
+    text-indent: 20%;       /* Espaço para a primeira palavra */ 
+}
+
+/* FORMULARIO DE CONTATO */
+
+#contato{
+    background-color: #8B69B3;
+    padding: 10%;
+}
+
+label{
+    margin-left: 7%;
+}
+
+#formulario{
+    display: inline-block;
+    margin: 5%;
+    padding: 5%;
+    width: 25%;
+    background-color: whitesmoke;
+    margin-left: 32%;
+}
+
+#formulario input{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    text-indent: 5px; 
+}
+
+#formulario textarea{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 100px;
+    resize: vertical; /* tira a possibilidade de aumentar a caixa de texto horizontalmente*/
+    text-indent: 5px; 
+}
+
+#formulario h1{
+  text-align-last: center;
+}
+
+.form label {
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 0rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #8B69B3;
+  box-shadow: 0 0 0 3px #8753c4;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: #8B69B3;
+  color: rgb(0, 0, 0);
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: #8753c4;
+  color: white;
+  box-shadow: 0 0 0 3px #8B69B3;
+}
+
+#contato textarea{
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+}
+
+#contato input{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#contato button{
+    display: block;
+    width: 80%;
+    height: 45px;
+    margin: 10%;
+}
+
+/* ESTILO RODAPÉ */
+
+footer{
+    background-image: linear-gradient(to top, #8753c4, #8B69B3);
+    padding: 30px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+/* BOTÃO WPP */
+
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
+}

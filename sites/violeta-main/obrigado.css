@@ -1,0 +1,48 @@
+.gradient{
+    background: linear-gradient(to right, #8B69B3, #8753c4);
+}
+h2{
+  width: fit-content;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 1.2;
+  padding-top: 20%;
+  text-shadow:#000 -1px -1px;
+  margin: auto;
+  
+}
+
+p{
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  text-shadow:#000 -1px -1px
+}
+
+button {
+  display: block;
+  padding: 1rem;
+  background: #8753c4;
+  color: rgb(0, 0, 0);
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 35%;
+  width: 30%;
+  box-shadow: 0 0 0 1.5px #ffffff;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #7e4bb8;
+  color: white;
+  box-shadow: 0 0 0 3.5px #ffffff;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Arctic Monkeys</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #F0F0F0;">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:3000/">Arctic Monkeys</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="http://localhost:3000/tranquility">Tranquility</a>
+                    <a class="nav-link active" href="http://localhost:3000/am">AM</a>
+                    <a class="nav-link active" href="http://localhost:3000/whatever">Whatever</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <center style="margin-top: 50px;">
+        <h1>Arctic Monkeys</h1>
+        <h3>Arctic Monkeys é uma banda britânica de rock formada em 2002 nos subúrbios da cidade de Sheffield, na
+            Inglaterra. <br>
+            O grupo é formado por Alex Turner, Matt Helders, Jamie Cook e Nick O'Malley.</h3>
+        <img src="https://www.jornalnopalco.com.br/wp-content/uploads/2018/03/Arctic_monkeys1.jpg" class="img-fluid">
+        <br>
+        <br>
+        <h1>Prinpicais albuns:</h1>
+    </center>
+
+
+    <center id="capaLp" style="margin-top: 50px;">
+        <a href="http://localhost:3000/tranquility" style="text-decoration:none;">
+            <img src="https://m.media-amazon.com/images/I/81xpnmb6lEL._AC_SL1500_.jpg" class="rounded"
+                style="width: 300px; margin: 20px;">
+
+        </a>
+
+        <a href="http://localhost:3000/am" style="text-decoration:none">
+            <img src="https://m.media-amazon.com/images/I/71hEtk3aCpL._AC_SL1500_.jpg" class="rounded"
+                style="width: 300px; margin: 20px;">
+        </a>
+
+        <a href="http://localhost:3000/whatever" style="text-decoration:none">
+            <img src="https://www.505indie.com.br/wp-content/uploads/2016/01/whatever.jpg" class="rounded"
+                style="width: 300px; margin: 20px;">
+        </a>
+    </center>
+
+    <div id="apiSpotify" style="height: auto; display: flex;">
+
+    </div>
+
+    <div id="catalogo" style="height: auto; display: flex;">
+        <ul id="listaReproducao">
+
+        </ul>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+
+        fetch("http://localhost:3000/tranquility")
+            .then((response) => { return response.json(); })
+            .then((tranquilityJSON) => {
+                let listaReproducao = document.getElementById("listaReproducao");
+                console.log(tranquilityJSON);
+                for (tranquility of tranquilityJSON) {
+                    let tranquilityHTML = document.createElement("li");
+                    tranquilityHTML.innerText = tranquility.nome + tranquility.duracao;
+                    listaReproducao.appendChild(tranquilityHTML);
+                }
+            });
+    </script>
+</body>

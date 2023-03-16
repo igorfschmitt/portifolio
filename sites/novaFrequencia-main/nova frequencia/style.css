@@ -1,0 +1,281 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#bannerHome{
+	width: 80%;
+	vertical-align: center;
+
+}
+#banner{
+	width: 100%;
+	height: 100%;
+	background-image: url(imagens/homebanner.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+/******************************************************/
+#inscricao{
+	width: 94.8%;
+	height: 70%;
+	background-color: #00A5FE;
+	padding-left: 70px;
+}
+#inscricao span{
+	font-family: roboto, sans-serif;
+	font-size: 36px;
+	color: white;
+	margin: 0px 0px 20px;
+	
+}
+#inscricao h2{
+	font-family: roboto, sans-serif;
+	font-size: 49px;
+}
+#texto{
+	text-align: center;
+	padding-top: 5%;
+
+}
+#aprender{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+.input{
+	width: 500px;
+	height: 58.39px;
+	padding: 13px;
+	background-color: #fff;
+	margin-top: 10px;
+	border: 0px;
+	border-radius: 5px;
+
+}
+#botao{
+	width: 500px;
+	height: 58.39px;
+	padding: 13px;
+	background-color: #000;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	border: 0px;
+}
+#botao:hover{
+	background-color: #222222;
+}
+#inputBotao{
+	padding: 50px;
+	padding-top: 1%;
+}
+/******************************************************/
+#aprender{
+	width: 100%;
+	height: 750px;
+	background-color: #000;
+	text-align: center;
+	padding-top: 50px;
+	z-index: 1;
+}
+#titulo{
+	color: #00A5FE;
+	font-family: roboto, sans-serif;
+	font-size: 70px;
+	z-index: 1;
+}
+#saiba{
+	color: #fff;
+	font-family: roboto, sans-serif;
+	font-size: 28px;
+	z-index: 1;
+}
+.dia{
+	font-family: roboto, sans-serif;
+	color: #00A5FE;
+	padding: 15px 0px 15px 15px;
+	font-size: 50px;
+	z-index: 1;
+	
+}
+.mes{
+	color: #a9a9a9;
+	font-size: 25px;
+	z-index: 1;
+
+}
+#jan31{
+	margin-left: 100px;
+	float: left;
+	z-index: 1;
+}
+.caixas{
+	font-family: roboto, sans-serif;
+	width: 230px;
+	height: 400px;
+	text-align: center;
+	margin-left: 30px;
+	margin-top: 100px;
+	color: #fff;
+	border-radius: 5px;
+	z-index: 1;
+	float: left;
+	border: 1px solid #333;
+}
+#caixaDias tr td ul{
+	margin-top: 10px;
+	text-align: left;
+	z-index: 1;
+
+}
+#caixaDias tr td ul li{
+	margin-top: 15px;
+	z-index: 1;
+}
+.diaMes{
+	padding-top: 80px;
+	z-index: 1;
+}
+.circulo{
+	width: 120;
+	height: 120;
+	border-radius: 50%;
+	background-color: #00A5FE;
+	float: left;
+}
+#circuloUm{
+	z-index: 2;
+	margin-left: 55px;
+	margin-top: -60px;
+	width: 120;
+	height: 120;
+	border-radius: 50%;
+	background-color: #00A5FE;
+	float: left;
+}
+.circulo #textoAula{
+	font-family: roboto, sans-serif;
+	font-size: 16px;
+	color: #000;
+	margin-top: 5px;
+	line-height: 40px;
+}
+.circulo #diaDaAula{
+	color: #000;
+	font-size: 70px;
+	font-family: roboto, sans-serif;
+	line-height: 50px;
+}
+
+/******************************************************/
+
+#feedback{
+	width: 100%;
+	height: 800px;
+	background-color: #00a5fe;
+	text-align: center;
+	padding-top: 50px;
+}
+#tituloFeedback{
+	font-family: roboto, sans-serif;
+	color: #fff;
+	font-size: 71px;
+	
+}
+#descricaoFeedback{
+	font-family: roboto, sans-serif;
+	color: #000;
+	font-size: 26px;
+}
+#feedback img{
+	margin: 50px 20px;
+	width: 300px;
+}
+
+/******************************************************/
+
+#quemVai{
+	width: 100%;
+	height: 650px;
+	background-color: #fff;
+}
+#fotoLeo{
+	width: 350px;
+	margin-top: 79px;
+	margin-left: 100px;
+}
+#quemLabel{
+	font-family: roboto, sans-serif;
+	color: #00a5fe;
+	font-size: 70px;
+	margin-left: 50px;
+}
+#quemVai table tr td p{
+	font-size: 18px;
+	font-family: roboto, sans-serif;
+	color: #212529;
+	margin: 0px 50px 16px;
+	line-height: 30px;
+}
+#quemVai table tr td a{
+	text-decoration: none;
+	font-size: 18px;
+	font-family: roboto, sans-serif;
+	color: #00a5fe;
+}
+#quemVai table tr td a:hover{
+	text-decoration: none;
+	font-size: 18px;
+	font-family: roboto, sans-serif;
+	color: #000;
+	transition: color .2s ease-out, background .2s ease-in;
+}
+#leoMarcondes{
+	font-size: 40px;
+	font-family: roboto, sans-serif;
+	margin: 30px 0px 0px;
+	color: #212529;
+	margin-left: 50px;
+}
+#menteDoTrader{
+	font-size: 20px;
+	font-family: roboto, sans-serif;
+	margin: 30px 0px 0px;
+	color: #212529;
+	margin-left: 50px;
+}
+/******************************************************/
+
+#video{
+	width: 100%;
+	height: 650px;
+	background-color: #000;
+}
+
+/******************************************************/
+footer{
+	width: 100%;
+	height: 140px;
+}
+footer img{
+	padding-top: 50px;
+	opacity: 0.7;
+}
+footer img:hover{
+	opacity: 1;
+}
+#insta{
+	margin-left: 200px;
+}
+footer p{
+	color: #000;
+	font-size: 16px;
+	font-family: roboto, sans-serif;
+	padding-top: 50px;
+	margin-left: 140px;
+	line-height: 25px;
+}

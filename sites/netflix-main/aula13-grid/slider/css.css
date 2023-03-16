@@ -1,0 +1,62 @@
+.accordian {
+    width: 805px; height: 320px;
+    overflow: hidden;
+
+    /*estilo geral*/
+    margin: 100px auto;
+}
+*{
+	background-color: rgb(40,41,35);
+}
+
+/*hack para evitar cintilação em alguns navegadores*/
+.accordian ul {
+    width: 2000px;
+
+}
+
+.accordian li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+
+    
+    
+    
+    /*Transições para dar efeito de animação*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    
+}
+
+/*Reduzir com elementos não pairados*/
+.accordian ul:hover li {width: 40px;}
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+    display: block;
+
+}
+
+/*Imagem title styles*/
+.image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0; 
+	width: 640px;   
+
+}
+.image_title a {
+    display: block;
+    background: rgb(60, 61, 52);
+    font-family: helvetica;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+}

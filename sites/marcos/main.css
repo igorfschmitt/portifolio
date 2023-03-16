@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#aboutMe {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-bottom: -10px;
+}
+
+img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.txt {
+    color: #fff;
+    font-family: 'Gruppo', cursive;
+}
+
+#menu {
+    margin-bottom: -10px;
+}
+
+#menu ul li a {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 100px;
+    font-family: 'Gruppo', cursive;
+    text-decoration: none;
+}
+
+#projects {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+#education {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+#experience {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+#contact {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+}

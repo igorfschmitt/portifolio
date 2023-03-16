@@ -1,0 +1,210 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#menuSuperior{
+	background-color: #212121;
+	width: 100%;
+	height: 50px;
+}
+.icone{
+	width: 30px;
+	padding-left: 1%;
+	padding-top: 10px;
+}
+#face{
+	padding-left: 250px;
+}
+#adicionar{
+	width: 30px;
+}
+
+#menuSuperior tr td p,img{
+	color: #fff;
+	display: inline-block;
+	vertical-align: center;
+	float: left;
+	padding: 5px;
+}
+#direita p{
+	padding-right: 250px;
+}
+#direita img{
+	padding-top: 15px;
+}
+#menuSuperior tr td p{
+	text-align: right;
+}
+
+/*perfil****************************************************************************************************************************/
+
+#perfil{
+	width: 100%;
+	height: 200px;
+	background-color: #161616;
+}
+#fotoPerfil{
+	width: 130px;
+	border-radius: 50%;
+	margin-left: 250px;
+	margin-top: 30px;
+}
+#nome{
+	color: #fff;
+	font-size: 25px;
+	font-family: helvetica;
+}
+#pin{
+	width: 10px;
+}
+#cidade{
+	color: #ADB2B2;
+}
+#perfilCentro button{
+	background-color: #0057FF;
+	color: #fff;
+	width: 150px;
+	height: 40px;
+	border-radius: 50px;
+	border: 0px;
+	font-weight: 800;
+	font-family: helvetica;
+	float: left;
+}
+#perfilCentro{
+	padding-top: 40px;
+}
+#msg{
+	width: 150px;
+	height: 40px;
+	background-color: #fff;
+	float: left;
+	font-family: helvetica;
+	font-size: 15px;
+	border-radius: 50px;
+	border: 0px;
+	font-weight: 600;
+}
+#msg img{
+	width: 20px;
+	padding-top: 10px;
+	padding-left: 25px;
+}
+#perfilDireita{
+	padding-left: 10px;
+	float: left;
+	line-height: 10px;
+}
+#exibir{
+	color: #a4a4a4;
+	font-family: helvetica;
+	font-size: 20px;
+	padding-left: 200px;
+	font-weight: 500;
+}
+/*portifolio***************************************************************************************************************/
+
+#portifolio{
+	width: 100%;
+	height: 695px;
+	background-color: #212121;
+}
+#fotoPortifolio{
+	margin-left: 250px;
+}
+.imagens{
+	width: 250px;
+	margin: 50px 20px 0px 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+#descricao1{
+	margin-left: 255px;
+}
+.descricao{
+	width: 250px;
+	height: 30px;
+	background-color: #fff;
+	margin-left: 25px;
+	margin-top: -5px;
+}
+#titulo1{
+	margin-left: 255px;
+}
+.titulo{
+	width: 250px;
+	height: 100px;
+	background-color: #fff;
+	margin-left: 25px;
+}
+#likes1{
+	margin-left: 255px;
+}
+.likes{
+	width: 250px;
+	height: 40px;
+	background-color: #fff;
+	margin-left: 25px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.txt{
+	font-weight: 600;
+	color: #161616;
+	font-family: helvetica;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.txtT{
+	font-weight: 500;
+	color: #212121;
+	font-family: helvetica;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+}
+.linha{
+	padding-left: 10px;
+	padding-top: 0;
+	color: grey;
+}
+.txtA{
+	padding-left: 10px;
+	color: #212121;
+	font-family: helvetica;
+}
+.likes img{
+	width: 20px;
+	float: left;
+	margin-left: 10px;
+}
+.likes p{
+	font-weight: 600;
+	color: #212121;
+	font-family: helvetica;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+.olho{
+	margin-top: 9px;
+	width: 30px;
+}
+.likeImg{
+	margin-top: 5px;
+}
+/**************************************************************************************************************************/
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #161616;
+	margin-top: 170px;
+}
+footer p{
+	text-align: center;
+	padding-top: 15px;
+	font-family: helvetica;
+	color: #a4a4a4;
+	font-weight: 500;
+	font-size: 15px;
+}
